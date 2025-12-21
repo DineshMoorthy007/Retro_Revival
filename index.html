@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Frogger - Retro Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>AI FROGGER</h1>
+            <div class="score-board">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="lives">Lives: <span id="lives">3</span></div>
+                <div class="level">Level: <span id="level">1</span></div>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="800" height="600"></canvas>
+            
+            <!-- Game Over Screen -->
+            <div id="gameOverScreen" class="game-over-screen hidden">
+                <div class="game-over-content">
+                    <h2>GAME OVER</h2>
+                    <div class="final-stats">
+                        <div class="stat">Final Score: <span id="finalScore">0</span></div>
+                        <div class="stat">Level Reached: <span id="finalLevel">1</span></div>
+                        <div class="stat">Skill Level: <span id="skillLevel">Beginner</span></div>
+                    </div>
+                    <div class="game-over-buttons">
+                        <button id="playAgainBtn">Play Again</button>
+                        <button id="viewStatsBtn">View Stats</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <div class="ai-panel">
+                <h3>AI Assistant</h3>
+                <div class="ai-status" id="aiStatus">Connecting...</div>
+                <div class="ai-hint" id="aiHint"></div>
+                <button id="aiHintBtn">Get Hint</button>
+                <button id="aiAutoBtn">AI Auto-Play</button>
+                <button id="reconnectBtn" class="hidden">Reconnect AI</button>
+            </div>
+            
+            <div class="game-controls">
+                <button id="startBtn">Start Game</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Controls</h3>
+            <p>Arrow Keys: Move Frog | Space: Jump | AI Features: Get hints or watch AI play!</p>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
