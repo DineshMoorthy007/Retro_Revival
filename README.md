@@ -127,13 +127,20 @@ A modern take on the classic 1981 Frogger game with advanced AI features and ret
 
 ### File Structure
 ```
-├── index.html          # Main game page
-├── style.css           # Retro styling
-├── game.js            # Game engine and AI integration
-├── ai_backend.py      # Python AI server
-├── requirements.txt   # Python dependencies
-├── start_backend.py   # Backend startup script
-└── README.md         # This file
+ai-frogger/
+├── index.html              # Main game interface
+├── style.css               # Retro styling and animations  
+├── game.js                 # Core game engine (1200+ lines)
+├── ai_backend.py           # Python AI server (500+ lines)
+├── requirements.txt        # Python dependencies
+├── start_backend.py        # Easy backend startup
+├── README.md              # Comprehensive user guide
+└── .kiro/                 # Complete project documentation
+    ├── project-spec.md    # Technical specifications
+    ├── api-spec.md        # API documentation
+    ├── design-spec.md     # Visual design guidelines
+    └── steering/
+        └── development-guidelines.md  # Coding standards
 ```
 
 ### Adding Features
